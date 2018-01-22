@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Inside Studio Web -->
   <meta charset="utf-8">
   <title>Inside Studio Web</title>
   <link rel="stylesheet" type="text/css" href="./public/style/css/style.css">
