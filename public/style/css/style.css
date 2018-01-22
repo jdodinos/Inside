@@ -24,6 +24,7 @@ body {
   body nav.navbar {
     background-color: #111;
     /*position: fixed;*/
+    min-height: 60px;
     width: 100%;
     z-index: 9000; }
     body nav.navbar .inner-navbar {
@@ -35,11 +36,16 @@ body {
         font-weight: 100;
         padding: 0.2em 0;
         margin: 0; }
-      body nav.navbar .inner-navbar ul.main-menu {
+      body nav.navbar .inner-navbar .container-menu img {
+        cursor: pointer;
+        display: none;
+        margin-top: 15px;
+        width: 40px; }
+      body nav.navbar .inner-navbar .container-menu ul.main-menu {
         display: flex; }
-        body nav.navbar .inner-navbar ul.main-menu li {
+        body nav.navbar .inner-navbar .container-menu ul.main-menu li {
           padding: 5px; }
-          body nav.navbar .inner-navbar ul.main-menu li a {
+          body nav.navbar .inner-navbar .container-menu ul.main-menu li a {
             font-size: 1.3em;
             padding: 5px 10px;
             text-decoration: none; }
@@ -47,7 +53,7 @@ body {
     position: fixed;
     top: 0; }
   body header#header-main {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100%;
     overflow: hidden;
     position: relative;
@@ -84,8 +90,9 @@ body {
           text-align: center;
           width: 48px; }
   body .row-page {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 100px;
+    padding-bottom: 30px;
     max-width: 100%;
     overflow: hidden;
     position: relative; }
@@ -200,5 +207,51 @@ body {
   body footer .copyright {
     background-color: #000;
     padding: 20px; }
+
+/* Para tablets */
+@media screen and (max-width: 992px) {
+  body .row-services .content {
+    flex-direction: column; }
+    body .row-services .content .item-content {
+      margin: 10px auto; }
+  body .row-page .block-title:before {
+    width: 20%; }
+  body .row-page .block-title:after {
+    width: 20%; } }
+/* Para mobiles */
+@media screen and (max-width: 768px) {
+  body header#header-main .inner-header {
+    top: 30%; }
+    body header#header-main .inner-header .container-text h1 {
+      font-size: 5em; }
+    body header#header-main .inner-header .container-text h4 {
+      font-size: 1em; }
+  body nav.navbar .inner-navbar h2 {
+    font-size: 25px;
+    margin-top: 10px; }
+  body nav.navbar .inner-navbar .container-menu img {
+    display: block; }
+  body nav.navbar .inner-navbar .container-menu ul.main-menu {
+    display: none;
+    margin-top: 5px;
+    z-index: 100; }
+  body nav.navbar .inner-navbar .container-menu ul.show-menu {
+    background-color: #000;
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 250px; }
+    body nav.navbar .inner-navbar .container-menu ul.show-menu a {
+      display: block; }
+  body .row-page {
+    padding-top: 50px; }
+    body .row-page .block-title {
+      font-size: 25px; }
+  body .row-contact .content {
+    flex-direction: column; }
+    body .row-contact .content .item-content {
+      width: 100%; }
+      body .row-contact .content .item-content .form-group .form-control {
+        width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */
