@@ -13,7 +13,7 @@
       include('./views/header.php');
       include('./views/navbar.php');
       include('./views/services.php');
-      include('./views/works.php');
+      // include('./views/works.php');
       include('./views/contact.php');
       include('./views/footer.php');
     ?>
