@@ -9,14 +9,14 @@
         <p>Soluciones de sofware a la medida de las necesidades individuales y personalizados de cada empresa.</p>
         <ul class="address">
           <li>
-            <img class="text-center" src="public/images/location.svg">
+            <img class="text-center" src="public/images/location.svg" alt="Ubicación" title="Bogotá D.C., Colombia">
             <span>
               <!-- 1600 Pennsylvania Ave NW,<br> -->
               Bogotá D.C., Colombia
             </span>
           </li>
           <li>
-            <img class="text-center" src="public/images/mail.svg">
+            <img class="text-center" src="public/images/mail.svg" alt="Email" title="insidestudioweb@gmail.com">
             <span>insidestudioweb@gmail.com</span>
           </li>
           <!-- <li>
@@ -24,8 +24,8 @@
             <span>+1-202-555-0144</span>
           </li> -->
           <li>
-            <img class="text-center" src="public/images/world.svg">
-            <span><a href="#" class="text-main">www.insidestudioweb.com</a></span>
+            <img class="text-center" src="public/images/world.svg" alt="Página web" title="www.insidestudioweb.com">
+            <span><a href="#" class="text-main" title="www.insidestudioweb.com">www.insidestudioweb.com</a></span>
           </li>
         </ul>
       </div>

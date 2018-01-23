@@ -33,6 +33,7 @@ body {
     nav.navbar {
       background-color: #111;
       /*position: fixed;*/
+      min-height: 60px;
       width: 100%;
       z-index: 9000;
         .inner-navbar {
@@ -45,16 +46,24 @@ body {
               padding: 0.2em 0;
               margin: 0;
             }
-            ul.main-menu {
-              display: flex;
-                li {
-                  padding: 5px;
-                    a {
-                      font-size: 1.3em;
-                      padding: 5px 10px;
-                      text-decoration: none;
-                    }
-                }
+            .container-menu {
+              img {
+                cursor: pointer;
+                display: none;
+                margin-top: 15px;
+                width: 40px;
+              }
+              ul.main-menu {
+                display: flex;
+                  li {
+                    padding: 5px;
+                      a {
+                        font-size: 1.3em;
+                        padding: 5px 10px;
+                        text-decoration: none;
+                      }
+                  }
+              }
             }
         }
     }
@@ -63,7 +72,7 @@ body {
       top: 0;
     }
     header#header-main {
-      height: 100vh;
+      min-height: 100vh;
       max-width: 100%;
       overflow: hidden;
       position: relative;
@@ -106,8 +115,9 @@ body {
         }
     }
     .row-page {
-      height: 100vh;
+      min-height: 100vh;
       padding-top: 100px;
+      padding-bottom: 30px;
       max-width: 100%;
       overflow: hidden;
       position: relative;
@@ -248,4 +258,90 @@ body {
           padding: 20px;
         }
     }
+}
+/* Para tablets */
+@media screen and (max-width: 992px) {
+  body {
+    .row-services {
+      .content {
+        flex-direction: column;
+          .item-content {
+            margin: 10px auto;
+          }
+      }
+    }
+    .row-page {
+      .block-title:before {
+        width: 20%;
+      }
+      .block-title:after {
+        width: 20%;
+      }
+    }
+  }
+}
+/* Para mobiles */
+@media screen and (max-width: 768px) {
+  body {
+    header#header-main {
+      .inner-header {
+        top: 30%;
+          .container-text {
+            h1 {
+              font-size: 5em;
+            }
+            h4 {
+              font-size: 1em;
+            }
+          }
+      }
+    }
+    nav.navbar {
+      .inner-navbar {
+        h2 {
+          font-size: 25px;
+          margin-top: 10px;
+        }
+        .container-menu {
+          img {
+            display: block;
+          }
+          ul.main-menu {
+            display: none;
+            margin-top: 5px;
+            z-index: 100;
+          }
+          ul.show-menu {
+            background-color: #000;
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 250px;
+              a {
+                display: block;
+              }
+          }
+        }
+      }
+    }
+    .row-page {
+      padding-top: 50px;
+        .block-title {
+          font-size: 25px;
+        }
+    }
+    .row-contact {
+      .content {
+        flex-direction: column;
+          .item-content {
+            width:100%;
+              .form-group {
+                .form-control {
+                  width: 90%;
+                }
+              }
+          }
+      }
+    }
+  }
 }
