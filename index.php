@@ -3,8 +3,9 @@
 <head>
 <!-- Inside Studio Web -->
   <meta charset="utf-8">
-  <title>Inside Studio Web</title>
+  <title>Crea tu página | Inside Studio Web</title>
   <link rel="stylesheet" type="text/css" href="./public/style/css/style.css">
+  <meta name="description" content="Una NUEVA forma de darle un nivel a tu negocio. ¡Entra ahora y crea tu página web!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -13,7 +14,7 @@
       include('./views/header.php');
       include('./views/navbar.php');
       include('./views/services.php');
-      include('./views/works.php');
+      // include('./views/works.php');
       include('./views/contact.php');
       include('./views/footer.php');
     ?>
