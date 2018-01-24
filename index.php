@@ -8,6 +8,7 @@ define('SITENAME', 'Inside Studio Web');
   <meta charset="utf-8">
   <title>Crea tu página | <?php print(SITENAME); ?></title>
   <link rel="stylesheet" type="text/css" href="./public/style/css/style.css">
+  <link rel="alternate" hreflang="es" href="https://www.insidestudioweb.com"/>
   <meta name="description" content="Una NUEVA forma de darle un nivel a tu negocio. ¡Entra ahora y crea tu página web con <?php print(SITENAME); ?>!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
