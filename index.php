@@ -1,15 +1,24 @@
 <?php
 define('SITENAME', 'Inside Studio Web');
+
+// Variables para metaetiquetas
+$title = 'Soluciones a la medida |' . SITENAME;
+$description = 'Crea tu página web con ' . strtoupper(SITENAME) . '. Una NUEVA forma de darle un nivel a tu negocio!. ¡Es fácil! No necesitas saber de tecnología, preocupate por tu negocio y nosotros nos encargamos de tu WEB';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 <!-- Inside Studio Web -->
   <meta charset="utf-8">
-  <title>Crea tu página | <?php print(SITENAME); ?></title>
+  <title><?php print($title); ?></title>
   <link rel="stylesheet" type="text/css" href="./public/style/css/style.css">
   <link rel="alternate" hreflang="es" href="https://www.insidestudioweb.com"/>
-  <meta name="description" content="Una NUEVA forma de darle un nivel a tu negocio. ¡Entra ahora y crea tu página web con <?php print(SITENAME); ?>!">
+  <meta name="description" content="<?php print($description); ?>">
+  <meta name="og:site_name" content="<?php print(SITENAME); ?>">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="<?php print($title); ?>">
+  <meta name="og:url" content="https://www.insidestudioweb.com/">
+  <meta name="og:description" content="<?php print($description); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
