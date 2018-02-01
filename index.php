@@ -2,7 +2,7 @@
 define('SITENAME', 'Inside Studio Web');
 
 // Variables para metaetiquetas
-$title = 'Soluciones a la medida |' . SITENAME;
+$title = 'Soluciones a la medida | ' . SITENAME;
 $description = 'Crea tu página web con ' . strtoupper(SITENAME) . '. Una NUEVA forma de darle un nivel a tu negocio!. ¡Es fácil! No necesitas saber de tecnología, preocupate por tu negocio y nosotros nos encargamos de tu WEB';
 ?>
 <!DOCTYPE html>
