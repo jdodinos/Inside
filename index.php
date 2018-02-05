@@ -13,13 +13,16 @@ $description = 'Crea tu página web con ' . strtoupper(SITENAME) . '. Una NUEVA 
   <title><?php print($title); ?></title>
   <link rel="stylesheet" type="text/css" href="./public/style/css/style.css">
   <link rel="alternate" hreflang="es" href="https://www.insidestudioweb.com"/>
+  <!-- Meta etiquetas -->
   <meta name="description" content="<?php print($description); ?>">
-  <meta name="og:site_name" content="<?php print(SITENAME); ?>">
-  <meta name="og:type" content="website">
-  <meta name="og:title" content="<?php print($title); ?>">
-  <meta name="og:url" content="https://www.insidestudioweb.com/">
-  <meta name="og:description" content="<?php print($description); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="<?php print($title); ?>">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.insidestudioweb.com/">
+  <meta property="og:image" content="https://www.insidestudioweb.com/public/images/header-back.jpg"/>
+  <meta property="og:description" content="<?php print($description); ?>">
+  <meta property="og:site_name" content="<?php print(SITENAME); ?>">
 </head>
 <body>
   <div class="container">

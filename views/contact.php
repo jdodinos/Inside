@@ -1,7 +1,7 @@
 <section class="row-page row-contact">
   <div class="inner-row inner-contact content-grid">
     <header>
-      <h2 class="text-center block-title text-white"><span>Hey!!<span></h2>
+      <h2 class="text-center block-title text-white"><span>Hey!!</span></h2>
     </header>
     <div class="content text-white">
       <div class="item-content content-text">

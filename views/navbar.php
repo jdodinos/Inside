@@ -3,7 +3,7 @@
     <h2 class="navbar-brand text-white"><?php print(SITENAME); ?></h2>
 
     <div class="container-menu">
-      <img class="text-center menu-mobile" src="public/images/menu.svg" alt="Menu mobile" name="menu-mobile.svg">
+      <img id="menu-mobile" class="text-center menu-mobile" src="public/images/menu.svg" alt="Menu mobile">
 
       <ul class="main-menu">
         <li class="nav-item active">

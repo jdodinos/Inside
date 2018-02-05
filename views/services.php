@@ -1,7 +1,7 @@
 <section class="row-page row-services">
   <div class="inner-row inner-services content-grid">
     <header>
-      <h2 class="text-center block-title"><span>Servicios<span></h2>
+      <h2 class="text-center block-title"><span>Servicios</span></h2>
     </header>
     <div class="content text-center">
       <div class="item-content web-develop">
