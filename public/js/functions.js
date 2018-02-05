@@ -54,4 +54,9 @@ $(document).ready(function() {
   $('body').click(function() {
     $('ul.main-menu').removeClass('show-menu');
   });
+
+  // Quitar mensaje
+  $('span.close-message').click(function() {
+    $(this).parents('#wrapper-messages').remove();
+  });
 });

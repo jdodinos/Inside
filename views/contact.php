@@ -1,3 +1,15 @@
+<?php
+include('connectsql.php');
+if (isset($message) && isset($classMessage)):?>
+  <div id="wrapper-messages" class="text-center text-white <?php print($classMessage); ?>">
+    <div class="inner">
+      <span class="close-message">x</span>
+      <?php print($message); ?>
+    </div>
+  </div>
+<?php
+endif;
+?>
 <section class="row-page row-contact">
   <div class="inner-row inner-contact content-grid">
     <header>
@@ -16,8 +28,8 @@
             </span>
           </li>
           <li>
-            <img class="text-center" src="public/images/mail.svg" alt="Email" title="insidestudioweb@gmail.com">
-            <span>insidestudioweb@gmail.com</span>
+            <img class="text-center" src="public/images/mail.svg" alt="Email" title="<?php print SITEEMAIL; ?>">
+            <span><?php print SITEEMAIL; ?></span>
           </li>
           <!-- <li>
             <img class="text-center" src="public/images/phone.svg">
@@ -39,7 +51,7 @@
             <input class="form-control text-white" name="user_email" placeholder="Ingrese su Email" type="email">
           </div>
           <div class="form-group">
-            <textarea name="InputMessage" name="user_message" class="form-control  text-white" rows="5" required="" placeholder="Mensaje..."></textarea>
+            <textarea class="form-control  text-white" name="user_message" rows="5" required="" placeholder="Mensaje..."></textarea>
           </div>
 
           <button type="submit" class="btn medium text-white">Enviar mensaje</button>

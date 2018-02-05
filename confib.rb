@@ -13,9 +13,9 @@ javascripts_dir = "public/js"
 environment = :develop
 
 if environment == :production
-  output_style = :compact
+  output_style = :compressed
 else
-  output_style = :expanded
+  output_style = :compressed
   sass_options = {:debug_info => false}
 end
 

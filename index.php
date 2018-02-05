@@ -1,5 +1,6 @@
 <?php
 define('SITENAME', 'Inside Studio Web');
+define('SITEEMAIL', 'insidestudioweb@gmail.com');
 
 // Variables para metaetiquetas
 $title = 'Soluciones a la medida | ' . SITENAME;

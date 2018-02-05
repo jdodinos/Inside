@@ -30,6 +30,33 @@ body {
     .text-center {
       text-align: center;
     }
+    #wrapper-messages {
+      border-radius: 10px 10px 10px 10px;
+      margin: 10px;
+      padding: 20px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 350px;
+      z-index: 9000;
+        .inner {
+          position: relative;
+            span.close-message
+            {
+              cursor: pointer;
+              padding: 5px;
+              position: absolute;
+              right: -10px;
+              top: -25px;
+            }
+        }
+    }
+    #wrapper-messages.success {
+      background-color: #139913;
+    }
+    #wrapper-messages.error {
+      background-color: #b00c0c;
+    }
     nav.navbar {
       background-color: #111;
       /*position: fixed;*/
